@@ -47,6 +47,7 @@ export const NETWORKS_RPC_URL: iParamsPerNetwork<string> = {
   [eEthereumNetwork.hardhat]: 'http://localhost:8545',
   [eEthereumNetwork.buidlerevm]: 'http://localhost:8545',
   [eEthereumNetwork.tenderly]: `https://rpc.tenderly.co/fork/`,
+  [eEthereumNetwork.uzheth]: 'http://130.60.244.246:8545',
   [ePolygonNetwork.mumbai]: 'https://rpc-mumbai.maticvigil.com',
   [ePolygonNetwork.matic]:
     // 'https://rpc-mainnet.maticvigil.com/v1/e616b9ddc7598ffae92629f8145614d55094c722',
@@ -65,6 +66,7 @@ export const NETWORKS_DEFAULT_GAS: iParamsPerNetwork<number> = {
   [eEthereumNetwork.hardhat]: 65 * GWEI,
   [eEthereumNetwork.buidlerevm]: 65 * GWEI,
   [eEthereumNetwork.tenderly]: 1 * GWEI,
+  [eEthereumNetwork.uzheth]: 65*GWEI,
   [ePolygonNetwork.mumbai]: 1 * GWEI,
   [ePolygonNetwork.matic]: 1 * GWEI,
   [eXDaiNetwork.xdai]: 1 * GWEI,

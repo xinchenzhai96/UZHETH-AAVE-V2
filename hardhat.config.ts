@@ -3,23 +3,9 @@ import fs from 'fs';
 import { HardhatUserConfig } from 'hardhat/types';
 // @ts-ignore
 import { accounts } from './test-wallets.js';
-import {
-  eAvalancheNetwork,
-  eEthereumNetwork,
-  eNetwork,
-  ePolygonNetwork,
-  eXDaiNetwork,
-} from './helpers/types';
+import { eAvalancheNetwork, eEthereumNetwork, eNetwork, ePolygonNetwork, eXDaiNetwork } from './helpers/types';
 import { BUIDLEREVM_CHAINID, COVERAGE_CHAINID } from './helpers/buidler-constants';
-import {
-  NETWORKS_RPC_URL,
-  NETWORKS_DEFAULT_GAS,
-  BLOCK_TO_FORK,
-  buildForkConfig,
-} from './helper-hardhat-config';
-
-require('dotenv').config();
-
+import { buildForkConfig, NETWORKS_DEFAULT_GAS, NETWORKS_RPC_URL } from './helper-hardhat-config';
 import '@nomiclabs/hardhat-ethers';
 import '@nomiclabs/hardhat-waffle';
 import 'temp-hardhat-etherscan';
@@ -27,7 +13,8 @@ import 'hardhat-gas-reporter';
 import 'hardhat-typechain';
 import '@tenderly/hardhat-tenderly';
 import 'solidity-coverage';
-import { fork } from 'child_process';
+
+require('dotenv').config();
 
 const SKIP_LOAD = process.env.SKIP_LOAD === 'true';
 const DEFAULT_BLOCK_GAS_LIMIT = 8000000;
@@ -103,6 +90,7 @@ const buidlerConfig: HardhatUserConfig = {
     ropsten: getCommonNetworkConfig(eEthereumNetwork.ropsten, 3),
     main: getCommonNetworkConfig(eEthereumNetwork.main, 1),
     tenderly: getCommonNetworkConfig(eEthereumNetwork.tenderly, 3030),
+    uzheth: getCommonNetworkConfig(eEthereumNetwork.uzheth, 702),
     matic: getCommonNetworkConfig(ePolygonNetwork.matic, 137),
     mumbai: getCommonNetworkConfig(ePolygonNetwork.mumbai, 80001),
     xdai: getCommonNetworkConfig(eXDaiNetwork.xdai, 100),

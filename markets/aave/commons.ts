@@ -125,7 +125,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.ropsten]: undefined,
     [eEthereumNetwork.main]: undefined,
     [eEthereumNetwork.tenderly]: undefined,
-    [eEthereumNetwork.uzheth]: undefined,
+    [eEthereumNetwork.uzheth]: '0x68506d74848dB21Ea9B72c45F9aF0a41f098acA5',
   },
   EmergencyAdminIndex: 1,
   ProviderRegistry: {

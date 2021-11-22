@@ -30,6 +30,7 @@ import { usingPolygon, verifyAtPolygon } from './polygon-utils';
 import { ConfigNames, loadPoolConfig } from './configuration';
 import { ZERO_ADDRESS } from './constants';
 import { getDefenderRelaySigner, usingDefender } from './defender-utils';
+import uzhethConfig from '../markets/uzheth';
 
 export type MockTokenMap = { [symbol: string]: MintableERC20 };
 
@@ -194,7 +195,7 @@ export const getOptionalParamAddressPerNetwork = (
   return getParamPerNetwork(param, network);
 };
 
-export const getParamPerPool = <T>({ proto, amm, matic, avalanche }: iParamsPerPool<T>, pool: AavePools) => {
+export const getParamPerPool = <T>({ proto, amm, matic, avalanche, uzheth }: iParamsPerPool<T>, pool: AavePools) => {
   switch (pool) {
     case AavePools.proto:
       return proto;
@@ -204,6 +205,8 @@ export const getParamPerPool = <T>({ proto, amm, matic, avalanche }: iParamsPerP
       return matic;
     case AavePools.avalanche:
       return avalanche;
+    case AavePools.uzheth:
+      return uzheth;
     default:
       return proto;
   }

@@ -70,6 +70,9 @@ export const getReservesConfigByPool = (pool: AavePools): iMultiPoolsAssets<IRes
       [AavePools.avalanche]: {
         ...AvalancheConfig.ReservesConfig,
       },
+      [AavePools.uzheth]:{
+        ...uzhethConfig.ReservesConfig
+      }
     },
     pool
   );

@@ -233,7 +233,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.hardhat]: {},
     [eEthereumNetwork.buidlerevm]: {},
     [eEthereumNetwork.uzheth]: {
-      AAVE: '0xB0706b8F20A2eb8468e7C0150100A886201b56cD',
+    AAVE: '0xB0706b8F20A2eb8468e7C0150100A886201b56cD',
     BAT: '0x01cf62B5a3BA82C263eB763b47457a0f4AA3281a',
     BUSD: '0x43530a2b1868ad84FC7BBD082AC53e08e7D9465f',
     DAI: '0x5e2F377Cbe5CCbF741704AD0e0c22F52390dd239',

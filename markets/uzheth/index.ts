@@ -62,7 +62,7 @@ export const uzhethConfig: IAaveConfiguration = {
     [eEthereumNetwork.hardhat]: {},
     [eEthereumNetwork.coverage]: {},
     [eEthereumNetwork.uzheth]: {
-      YifeiYe: '0xe0e37ffd7bd3da49dbb987c86764ca150e22a5e0',
+      //YifeiYe: '0xe0e37ffd7bd3da49dbb987c86764ca150e22a5e0',
     },
     [eEthereumNetwork.kovan]: {
       AAVE: '0xB597cd8D3217ea6477232F9217fa70837ff667Af',

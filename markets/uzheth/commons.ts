@@ -17,7 +17,7 @@ export const CommonsConfig: ICommonConfiguration = {
   VariableDebtTokenNamePrefix: 'uzheth variable debt bearing',
   SymbolPrefix: '',
   ProviderId: 0, // Overriden in index.ts
-  OracleQuoteCurrency: 'ETH',
+  OracleQuoteCurrency: 'UZHETH',
   OracleQuoteUnit: oneEther.toString(),
   ProtocolGlobalParams: {
     TokenDistributorPercentageBase: '10000',

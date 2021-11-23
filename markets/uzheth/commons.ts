@@ -1,3 +1,4 @@
+import { zeroAddress } from 'ethereumjs-util';
 import {
   oneRay,
   ZERO_ADDRESS,
@@ -216,7 +217,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.ropsten]: ZERO_ADDRESS,
     [eEthereumNetwork.main]: '', //'0xA50ba011c48153De246E5192C8f9258A2ba79Ca9',
     [eEthereumNetwork.tenderly]: '0xA50ba011c48153De246E5192C8f9258A2ba79Ca9',
-    [eEthereumNetwork.uzheth]: '',
+    [eEthereumNetwork.uzheth]: ZERO_ADDRESS,
   },
   FallbackOracle: {
     [eEthereumNetwork.coverage]: '',

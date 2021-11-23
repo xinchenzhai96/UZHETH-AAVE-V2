@@ -154,6 +154,7 @@ export const getQuoteCurrency = async (config: IBaseConfiguration) => {
   switch (config.OracleQuoteCurrency) {
     case 'ETH':
     case 'WETH':
+    case 'UZHETH':
       return getWethAddress(config);
     case 'USD':
       return config.ProtocolGlobalParams.UsdAddress;

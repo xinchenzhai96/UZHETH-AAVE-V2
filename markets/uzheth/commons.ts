@@ -227,7 +227,7 @@ export const CommonsConfig: ICommonConfiguration = {
     [eEthereumNetwork.ropsten]: '0xAD1a978cdbb8175b2eaeC47B01404f8AEC5f4F0d',
     [eEthereumNetwork.main]: ZERO_ADDRESS,
     [eEthereumNetwork.tenderly]: ZERO_ADDRESS,
-    [eEthereumNetwork.uzheth]: '',
+    [eEthereumNetwork.uzheth]: ZERO_ADDRESS,
   },
   ChainlinkAggregator: {
     [eEthereumNetwork.coverage]: {},

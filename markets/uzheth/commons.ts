@@ -100,6 +100,9 @@ export const CommonsConfig: ICommonConfiguration = {
     BUSD: {
       borrowRate: oneRay.multipliedBy(0.05).toFixed(),
     },
+    UZHETH: {
+      borrowRate: oneRay.multipliedBy(0.05).toFixed(),
+    },
   },
   // ----------------
   // COMMON PROTOCOL ADDRESSES ACROSS POOLS
@@ -274,7 +277,7 @@ export const CommonsConfig: ICommonConfiguration = {
       STAKE: '0x7a299ECEc2FB49E9317615D5273319F7499b0A37',
       xSUSHI: '0x7786dC72bd7219D61B5C8164d591d93E6ba36f5c',
       WAVAX: '0x39Ed02bb6922e857405ec1dc10cDBeAC3BD8b839',
-      UZHETH: ZERO_ADDRESS,
+      UZHETH: '0xFD7Ae89349486eC1EEEE9885F4666b0fef80C83d',
       USD: '0x05E9456091C93f0Fe340dc1cca237C242F9463c2',
     },
 

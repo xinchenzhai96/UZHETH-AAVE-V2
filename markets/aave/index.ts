@@ -25,6 +25,7 @@ import {
   strategyXSUSHI,
   strategyENJ,
 } from './reservesConfigs';
+import {strategyUZHETH} from "../uzheth/reservesConfigs";
 
 // ----------------
 // POOL--SPECIFIC PARAMS
@@ -56,13 +57,14 @@ export const AaveConfig: IAaveConfiguration = {
     YFI: strategyYFI,
     ZRX: strategyZRX,
     xSUSHI: strategyXSUSHI,
+    UZHETH: strategyUZHETH,
   },
   ReserveAssets: {
     [eEthereumNetwork.buidlerevm]: {},
     [eEthereumNetwork.hardhat]: {},
     [eEthereumNetwork.coverage]: {},
     [eEthereumNetwork.uzheth]: {
-      YifeiYe: '0xe0e37ffd7bd3da49dbb987c86764ca150e22a5e0',
+      UZHETH: '0x65c620c6a2081aD35d6Af905AF6086E42a604216',
     },
     [eEthereumNetwork.kovan]: {
       AAVE: '0xB597cd8D3217ea6477232F9217fa70837ff667Af',

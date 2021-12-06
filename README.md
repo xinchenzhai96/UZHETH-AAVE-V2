@@ -1,5 +1,6 @@
 ## What is this repository for
 This repository is forked from the [Aave Protocol V2 repository](https://github.com/aave/protocol-v2). It got created due a project at our university. Our focus was to deploy Aave Protocol V2 onto the network of our university, which is not connected to mainnet. Since we struggled to do this with the offical documentation, we wanted to provide our experience to other people with same interest. However, due to our lack of complete understanding of this matter, not everything might be correct and we won't take responsibility. In any case, make sure to contact Aave directly if you need help.
+Note: Workflow has been removed from this forked repository
 
 ## What is Aave?
 Aave is a decentralized non-custodial liquidity markets protocol where users can participate as depositors or borrowers. Check out their repository for further information.
@@ -105,6 +106,5 @@ Special thanks to Aave support Discord channel, especially "shiv" (Discord name)
 
 ## Further help
 During our project, we got provided with the following [document](https://aave.notion.site/Deploy-New-Market-de7d0e4c30034da2b8b46c2c14a3d0df) after we requested more help. It might be helfpul as a further explanation how to proceed.
-
 
 

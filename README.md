@@ -86,7 +86,7 @@ Your tokens for *Reserve Assets* need to be ERC20 compliant. Make sure to deploy
 Add the address of your token to `ReserveAssets` in your market
 
 ## Road Map for uzheth network
-aTokens are generated and one can interact with the protocol (see interaction explanation in the original repository or our report). 
+aTokens are deployed together with the lending pool and one can interact with the protocol (see interaction explanation in the original repository or our report). 
 However there are still a few problems:
   - Calls have to be provided with additional argument `{gasPrice: 100, gasLimit: 90000}` otherwise you'll get *UNPREDICTABLE_GAS_LIMIT* error
   - Depositing UZHETH (our ERC20 token) seems to work but the transaction is not processed behind-the-scenes. Due the lack of time of our project, we couldn't solve this problem

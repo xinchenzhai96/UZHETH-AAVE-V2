@@ -74,10 +74,9 @@ If you like to deploy Mock oracles, you can follow these steps:
 1. Run in one terminal: `docker-compose up`
 2. Run in second terminal: `docker-compose run contracts-env npx hardhat --network yourNetwork console`
 3. In that console, type: `run(‘set-DRE’)`
-4. Then: `require(‘PATH/oracles-helpers.ts’).deployAllMockAggregators(require(‘PATH/constants.ts’).MOCK_CHAINLINK_AGGREGATORS_PRICES, false)`
+4. Then: `require(‘./helpers/oracles-helpers.ts’).deployAllMockAggregators(require(‘./helpers/constants.ts’).MOCK_CHAINLINK_AGGREGATORS_PRICES, false)`
 
-- **Note 1**: If your current directory is: *yourPath/UZHETH-AAVE-V2*, then *PATH* above stands for: `./helpers/`
-The resulting addresses have to be added to the object ChainlinkAggregator in the directory `./markets/yourMarket/commons.ts`
+- **Note 1**: The resulting addresses have to be added to the object ChainlinkAggregator in the directory `./markets/yourMarket/commons.ts`
 - **Note 2**: To our understanding, these oracles will only be considered when there's also an ERC20 Token existing and defined in `ReserveAssets`. Otherwise they will be skipped anyway during deployment.
 
 ### (Create ERC20 Token)
